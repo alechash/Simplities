@@ -13,6 +13,11 @@ class AboutViewController :UIViewController {
     @IBOutlet weak var BuyMeCoffeeButton: UIButton!
     /*@IBOutlet weak var ConfettiImage: UIImageView!*/
     
+    @IBAction func githubRepoButtonDidClick(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://github.com/mr-winson/Simplities")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    
     @IBAction func BuyMeCoffeeDidClick(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://buymeacoff.ee/mrwinson")! as URL, options: [:], completionHandler: nil)
         
